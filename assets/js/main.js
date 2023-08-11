@@ -1,5 +1,6 @@
 let offset = 0
 const limit = 10
+const maxRecord = 151
 
 
 
@@ -28,8 +29,20 @@ function loadpokemonItens(offset,limit){
         pokemonOL.innerHTML += newHtml
     })
 } 
-loadpokemonItens()
-loadMoreButton.addEventListener('click',() =>{
-    offset+=limit
-    loadpokemonItens(offset,limit)
-})
+
+loadpokemonItens(offset,limit)
+
+loadMoreButton.addEventListener('click', () => {
+    offset += limit
+    const qtdRecordsWithNexPage = offset + limit
+    
+    if (qtdRecordsWithNexPage >= maxRecord) {
+        const newLimit = maxRecord - offset
+        loadpokemonItens(offset, newLimit)
+    
+        loadMoreButton.parentElement.removeChild(loadMoreButton)
+    } else {
+        loadpokemonItens(offset, limit)
+    }
+    })
+
