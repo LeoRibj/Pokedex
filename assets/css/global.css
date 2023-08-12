@@ -2,17 +2,42 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+.topo{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    padding: 1rem;
+    background-color: #f70000;
+    height: 40vh;
+    color: #fff;
+}
+.topo h1{
+    
+    color: #fff;
+    margin: 1rem;
+    height: 2rem;
+    align-self: center;
+    text-align:center;
+  
+}
 
+.topo img{
+    max-width: 160;
+    height: 90px;
+    align-self: center;
+}
 body{
-    background-color: #f6f8fc;
+    background-color: #fff;
+    height: 100vw;
 }
 .content{
     width: 100vw;
     padding: 1rem;
     background-color: #fff;
     height: 100vh;
-    
+    color: #fff;
 }
+
 
 
 .content h1{
