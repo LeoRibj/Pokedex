@@ -3,13 +3,14 @@
     box-sizing: border-box;
 }
 .topo{
+    
     display: flex;
     flex-direction: row;
-    width: 100vw;
-    padding: 1rem;
+    padding: 0;
     background-color: #f70000;
     height: 40vh;
     color: #fff;
+    justify-content: center;
 }
 .topo h1{
     
@@ -18,6 +19,7 @@
     height: 2rem;
     align-self: center;
     text-align:center;
+    
   
 }
 
@@ -28,21 +30,14 @@
 }
 body{
     background-color: #fff;
-    height: 100vw;
 }
 .content{
     width: 100vw;
+    height: 100vw;
     padding: 1rem;
-    background-color: #fff;
-    height: 100vh;
-    color: #fff;
+    background-color: #fff;  
 }
 
-
-
-.content h1{
-    margin: 0;
-}
 
 @media screen and (min-width: 992px){
     .content{
